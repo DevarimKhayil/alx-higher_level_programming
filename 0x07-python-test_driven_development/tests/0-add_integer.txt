@@ -1,0 +1,32 @@
+# Test Case 1
+>>> add_integer = __import__('0-add_integer').add_integer
+>>> add_integer(3, 5)
+8
+
+# Test Case 2
+>>> add_integer(-10, 30)
+20
+
+# Test Case 3
+>>> add_integer(2.5, 7.5)
+9
+>>> add_integer(0, 0)
+0
+>>> add_integer(-1, 5)
+4
+>>> add_integer(3, -5)
+-2
+
+# Test Case 4 - Check for exception
+>>> add_integer("string", 5)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+# Test Case 5 - Check for exception
+>>> add_integer(10, "string")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+
