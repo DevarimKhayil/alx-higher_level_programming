@@ -1,4 +1,1 @@
-def copy_list(l):
-    b = []
-    l = b[:]
-    return l
+def copy_list(l): return [i for i in l]
